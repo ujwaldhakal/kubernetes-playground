@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: ujwaldhakal/laravel-repo
+        image: nginx
         ports:
         - containerPort: 80
         env:
