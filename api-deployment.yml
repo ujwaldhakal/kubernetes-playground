@@ -33,4 +33,26 @@ spec:
           valueFrom: 
             secretKeyRef:
               name: mysql-secret
-              key: mysql-root-password          
+              key: mysql-root-password     
+                   
+---
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+    name: api
+spec:
+  maxReplicas: 10
+  minReplicas: 1
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: api-deployment
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        targetAverageUtilization: 1
+    - type: Resource
+      resource:
+        name: memory
+        targetAverageUtilization: 1
