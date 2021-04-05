@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: ujwaldhakal/laravel-repo
+  repository: ujwaldhakal/laravel-repo:lastest
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "master"
