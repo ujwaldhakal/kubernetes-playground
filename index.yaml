@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  helm-chart-test:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-04-16T11:10:08.729944+02:00
+    description: A Helm chart for Kubernetes
+    digest: 35a4e31bfacc496f1b1bce664652916bb8701cc9df77f1b90534f5234ff297a6
+    name: helm-chart-test
+    urls:
+    - https://ujwaldhakal.github.io/kubernetes-playground/api.tar.gz
+    version: 0.1.0
+generated: 2019-04-16T11:10:08.729368+02:00
